@@ -59,14 +59,14 @@ const HomePage = () => {
     <Reasons />
 
       {/* Servicios Section */}
-      <section id="servicios" className="py-16">
+      <section id="servicios" className="py-16 pt-20">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-8">
+          <h2 className="text-5xl font-bold text-center text-blue-950 mb-8">
             Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Tarjeta de servicio */}
-            <div className="bg-white p-6 rounded-lg shadow text-center">
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="text-4xl text-blue-600 mb-4">🧹</div>
               <h3 className="text-xl font-bold mb-2">House Cleaning</h3>
               <p className="text-gray-600">
@@ -83,7 +83,7 @@ const HomePage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="https://via.placeholder.com/500"
+              src="/1.jpg"
               alt="IMG Equipo de Maid on Call"
               className="rounded-lg"
             />
@@ -106,14 +106,14 @@ const HomePage = () => {
       <HowItWorks />
 
       {/* Testimonios Section */}
-      <section id="testimonios" className="py-16 bg-blue-50">
+      <section id="testimonios" className="py-24 bg-blue-50">
         <div className="container mx-auto ">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-8">
+          <h2 className="text-5xl font-bold text-center text-blue-950 mb-16">
           Testimonials
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
             {/* Tarjeta de testimonio */}
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow-2xl">
               <p className="text-gray-600 mb-4">
                 "I have tried several cleaning companies over the years, but this one is by far the best. They are professional, courteous, and they always go above and beyond to ensure my home is spotless. Their rates are competitive, and I appreciate their dedication to customer satisfaction. "
               </p>
@@ -122,7 +122,7 @@ const HomePage = () => {
                 <div className="ml-2 font-bold">Liam J</div>
               </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow">
+            <div className="bg-white p-6 rounded-lg shadow-2xl">
               <p className="text-gray-600 mb-4">
                 " I am a busy mom of two, and I don't have time to clean my house as often as I'd like. That's where this residential house cleaning company comes in. They take care of all the cleaning tasks I don't have time for, and they do an amazing job. I love coming home to a clean and tidy house, and I couldn't do it without them.  "
               </p>

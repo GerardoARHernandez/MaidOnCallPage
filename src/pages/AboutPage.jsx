@@ -1,25 +1,45 @@
-// src/AboutPage.js
-import React from "react";
+import React, { useEffect } from "react";
 import Reasons from "../components/HomePage/Reasons";
 
 const AboutPage = () => {
+  // Función para desplazarse a la sección correspondiente
+  const scrollToSection = (hash) => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1)); // Eliminar el "#" del hash
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" }); // Desplazarse suavemente al elemento
+      }
+    }
+  };
+
+  // Efecto para manejar el desplazamiento al cargar la página o al cambiar el hash
+  useEffect(() => {
+    const hash = window.location.hash; // Obtener el hash actual
+    if (hash) {
+      // Usar un setTimeout para asegurarnos de que el desplazamiento se realice después del renderizado
+      setTimeout(() => {
+        scrollToSection(hash);
+      }, 100); // 100 ms de retraso
+    }
+  }, [window.location.hash]); // Dependencia: el hash de la URL
+
   return (
     <div>
         {/* Hero Section */}
         <section 
-            className="relative w-full h-72 flex items-center justify-center"
+            className="relative w-full h-80 flex items-center justify-center"
             style={{
                 backgroundImage: 'url("/about.jpg")', 
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
         >
-        <div className="absolute inset-0 bg-blue-500 opacity-50"></div>
-        <div className="relative z-10 text-center">
-            <h1 className="text-6xl font-bold text-white mb-4">
-            About Us
-            </h1>
-        </div>
+          <div className="absolute inset-0 bg-blue-900 opacity-55"></div>
+          <div className="relative z-10 text-center">
+              <h1 className="text-5xl font-bold text-white mb-4">
+              About Us
+              </h1>
+          </div>
         </section>
 
         <section className="bg-blue-50 py-20">
@@ -58,10 +78,12 @@ const AboutPage = () => {
         </section>
 
       {/* Sección de Información */}
-      <Reasons />
+      <section id="why-choose-us"> {/* Sección con id */}
+        <Reasons />
+      </section>
 
       {/* Sección de Valores */}
-      <section className="bg-blue-900 text-white py-16">
+      <section id="company-values" className="bg-blue-900 text-white py-16"> {/* Sección con id */}
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">Our Values</h2>
 
@@ -125,15 +147,15 @@ const AboutPage = () => {
       </section>      
 
       {/* Llamada a la acción */}
-      <section className="bg-blue-50 py-16">
+      <section className="bg-blue-50 py-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl font-bold text-blue-950 mb-4">
             Ready for a spotless clean?
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-gray-600 my-8">
             Contact us today and discover why we are the best option.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+          <button className="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800">
             Request a quote
           </button>
         </div>

@@ -1,9 +1,9 @@
 
 const HowItWorks = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-12">
-      <h2 className="text-4xl font-bold text-center text-blue-900 mb-8">How It Works</h2>
-      <p className="text-center text-lg text-gray-600 mb-8 px-4">
+    <div className="flex flex-col items-center justify-center py-12 pt-20">
+      <h2 className="text-5xl font-bold text-center text-blue-950 mb-8">How It Works</h2>
+      <p className="text-center text-lg text-gray-600 mb-8 px-20">
         Taking the stress out of any aspect of cleaning is what we specialize in. We will come to your house and offer a free quote, so you know exactly what you'll be spending.
       </p>
 
@@ -11,7 +11,7 @@ const HowItWorks = () => {
         {/* Book Your Cleaning */}
         <div className="text-center w-80">
           <div className="relative">
-            <div className="bg-blue-800 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
+            <div className="bg-blue-900 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12 text-white"
@@ -39,7 +39,7 @@ const HowItWorks = () => {
         {/* Clean */}
         <div className="text-center w-80">
           <div className="relative">
-            <div className="bg-blue-800 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
+            <div className="bg-blue-900 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12 text-white"
@@ -67,7 +67,7 @@ const HowItWorks = () => {
         {/* Enjoy */}
         <div className="text-center w-80">
           <div className="relative">
-            <div className="bg-blue-800 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
+            <div className="bg-blue-900 rounded-full w-32 h-32 flex items-center justify-center mx-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12 text-white"
