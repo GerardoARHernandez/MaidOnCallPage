@@ -75,7 +75,7 @@ function FAQPage() {
       <section
         className="relative w-full h-80 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("/about.jpg")',
+          backgroundImage: 'url("/about.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

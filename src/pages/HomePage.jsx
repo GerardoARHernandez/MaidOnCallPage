@@ -1,5 +1,6 @@
 
 import HowItWorks from "../components/HomePage/HowItWorks"
+import OurServices from "../components/HomePage/OurServices"
 import Reasons from "../components/HomePage/Reasons"
 
 const HomePage = () => {
@@ -58,32 +59,15 @@ const HomePage = () => {
 
     <Reasons />
 
-      {/* Servicios Section */}
-      <section id="servicios" className="py-16 pt-20">
-        <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-blue-950 mb-8">
-            Our Services
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Tarjeta de servicio */}
-            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="text-4xl text-blue-600 mb-4">🧹</div>
-              <h3 className="text-xl font-bold mb-2">House Cleaning</h3>
-              <p className="text-gray-600">
-                Deep cleaning for your home.
-              </p>
-            </div>
-            {/* Repite para otros servicios */}
-          </div>
-        </div>
-      </section>
+    <OurServices />
+      
 
       {/* Acerca de Nosotros Section */}
       <section id="nosotros" className="bg-blue-50 py-16">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/1.jpg"
+              src="/1.webp"
               alt="IMG Equipo de Maid on Call"
               className="rounded-lg"
             />

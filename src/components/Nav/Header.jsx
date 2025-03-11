@@ -1,13 +1,35 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom"; // Importamos useLocation
+import { useState, useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import ServicesDropdown from "./ServicesDropdown";
+import HeaderMobile from "./HeaderMobile";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHomeOpen, setIsHomeOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(false);
   const dropdownRef = useRef(null);
-  const timeoutRef = useRef(null);
-  const location = useLocation(); // Obtenemos la ruta actual
+  const servicesDropdownRef = useRef(null);
+  const location = useLocation();
+
+  // Cerrar menús desplegables al hacer clic fuera
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        servicesDropdownRef.current &&
+        !servicesDropdownRef.current.contains(event.target)
+      ) {
+        closeDropdown();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,22 +37,21 @@ const Header = () => {
 
   const toggleHome = () => {
     setIsHomeOpen(!isHomeOpen);
+    setIsServicesOpen(false); // Cerrar el menú de servicios si está abierto
+  };
+
+  const toggleServices = () => {
+    setIsServicesOpen(!isServicesOpen);
+    setIsHomeOpen(false); // Cerrar el menú de Home si está abierto
   };
 
   const closeDropdown = () => {
     setIsHomeOpen(false);
+    setIsServicesOpen(false);
   };
 
-  const startCloseTimer = () => {
-    timeoutRef.current = setTimeout(() => {
-      closeDropdown();
-    }, 1000);
-  };
-
-  const cancelCloseTimer = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false);
   };
 
   const scrollToSection = (hash) => {
@@ -50,22 +71,6 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const dropdownElement = dropdownRef.current;
-
-    if (isHomeOpen && dropdownElement) {
-      dropdownElement.addEventListener("mouseenter", cancelCloseTimer);
-      dropdownElement.addEventListener("mouseleave", startCloseTimer);
-    }
-
-    return () => {
-      if (dropdownElement) {
-        dropdownElement.removeEventListener("mouseenter", cancelCloseTimer);
-        dropdownElement.removeEventListener("mouseleave", startCloseTimer);
-      }
-    };
-  }, [isHomeOpen]);
-
-  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setShowScrollButton(true);
@@ -81,17 +86,14 @@ const Header = () => {
     };
   }, []);
 
-  // Función para determinar si un enlace está activo
   const isActive = (path) => {
     return location.pathname === path;
   };
 
-  const renderDropdown = (isOpen, toggle) => (
+  const renderDropdown = (isOpen, toggle, isMobile = false) => (
     <div
       ref={dropdownRef}
-      className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10"
-      onMouseEnter={cancelCloseTimer}
-      onMouseLeave={startCloseTimer}
+      className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50"
     >
       <Link
         to="/about"
@@ -135,7 +137,11 @@ const Header = () => {
       >
         FAQ
       </Link>
-      <a href="#team" className="block px-4 py-2 text-gray-700 hover:bg-blue-200" onClick={closeDropdown}>
+      <a
+        href="#team"
+        className="block px-4 py-2 text-gray-700 hover:bg-blue-200"
+        onClick={closeDropdown}
+      >
         Join Our Team
       </a>
     </div>
@@ -179,18 +185,52 @@ const Header = () => {
               </div>
               {isHomeOpen && renderDropdown(isHomeOpen, toggleHome)}
             </div>
-            <Link
-              to="/services"
-              className={`text-gray-700 hover:text-blue-600 ${
-                isActive("/services") ? "text-blue-500 font-bold" : ""
-              }`}
-            >
-              Cleaning Services
-            </Link>
+
+            {/* Menú desplegable para Cleaning Services */}
+            <div className="relative">
+              <div className="flex items-center">
+                <p
+                  onClick={toggleServices}
+                  className={`text-gray-700 hover:text-blue-600 hover:cursor-pointer ${
+                    isActive("/services") ? "text-blue-600 font-bold" : ""
+                  }`}
+                >
+                  Cleaning Services
+                </p>
+                <button
+                  onClick={toggleServices}
+                  className="text-gray-700 hover:text-blue-600 ml-1 focus:outline-none"
+                >
+                  <svg
+                    className={`w-4 h-4 transition-transform ${isServicesOpen ? 'transform rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              {isServicesOpen && (
+                <ServicesDropdown
+                  isActive={isActive}
+                  closeDropdown={closeDropdown}
+                  ref={servicesDropdownRef}
+                  isMobile={false}
+                />
+              )}
+            </div>
+
             <Link
               to="/blog"
               className={`text-gray-700 hover:text-blue-600 ${
-                isActive("/blog") ? "text-blue-500 font-bold" : ""
+                isActive("/blog") ? "text-blue-600 font-bold" : ""
               }`}
             >
               Blog
@@ -198,7 +238,7 @@ const Header = () => {
             <Link
               to="/certificates"
               className={`text-gray-700 hover:text-blue-600 ${
-                isActive("/certificates") ? "text-blue-500 font-bold" : ""
+                isActive("/certificates") ? "text-blue-600 font-bold" : ""
               }`}
             >
               Gift Certificates
@@ -206,7 +246,7 @@ const Header = () => {
             <Link
               to="/contact"
               className={`text-gray-700 hover:text-blue-600 ${
-                isActive("/contact") ? "text-blue-500 font-bold" : ""
+                isActive("/contact") ? "text-blue-600 font-bold" : ""
               }`}
             >
               Contact
@@ -233,75 +273,15 @@ const Header = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="md:hidden bg-white shadow-lg">
-            <div className="relative">
-              <div className="flex items-center">
-                <Link
-                  to="/"
-                  className={`block px-4 py-2 text-gray-700 hover:text-blue-600 ${
-                    isActive("/") ? "text-blue-500 font-bold" : ""
-                  }`}
-                >
-                  Home
-                </Link>
-                <button
-                  onClick={toggleHome}
-                  className="text-gray-700 hover:text-blue-600 ml-1 focus:outline-none"
-                >
-                  <svg
-                    className={`w-4 h-4 transition-transform ${isHomeOpen ? 'transform rotate-180' : ''}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              {isHomeOpen && renderDropdown(isHomeOpen, toggleHome)}
-            </div>
-            <Link
-              to="/services"
-              className={`block px-4 py-2 text-gray-700 hover:text-blue-600 ${
-                isActive("/services") ? "text-blue-500 font-bold" : ""
-              }`}
-            >
-              Cleaning Services
-            </Link>
-            <Link
-              to="/blog"
-              className={`block px-4 py-2 text-gray-700 hover:text-blue-600 ${
-                isActive("/blog") ? "text-blue-500 font-bold" : ""
-              }`}
-            >
-              Blog
-            </Link>
-            <Link
-              to="/certificates"
-              className={`block px-4 py-2 text-gray-700 hover:text-blue-600 ${
-                isActive("/certificates") ? "text-blue-500 font-bold" : ""
-              }`}
-            >
-              Gift Certificates
-            </Link>
-            <Link
-              to="/contact"
-              className={`block px-4 py-2 text-gray-700 hover:text-blue-600 ${
-                isActive("/contact") ? "text-blue-500 font-bold" : ""
-              }`}
-            >
-              Contact
-            </Link>
-            <button className="block w-full px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 text-sm">
-              Book Appointment
-            </button>
-          </div>
+          <HeaderMobile
+            isHomeOpen={isHomeOpen}
+            isServicesOpen={isServicesOpen}
+            toggleHome={toggleHome}
+            toggleServices={toggleServices}
+            closeMobileMenu={closeMobileMenu}
+            renderDropdown={renderDropdown}
+            isActive={isActive}
+          />
         )}
       </header>
 

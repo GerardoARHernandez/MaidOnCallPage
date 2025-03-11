@@ -5,9 +5,9 @@ const GiftCertificatesPage = () => {
     <>
       {/* Hero Section (1/4 del tamaño) */}
       <section
-        className="relative w-full h-64 flex items-center justify-center" // Ajustamos la altura a h-64
+        className="relative w-full h-64 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("/certificate.jpg")', // Reemplaza con tu imagen
+          backgroundImage: 'url("/certificate.webp")', // Reemplaza con tu imagen
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -20,7 +20,7 @@ const GiftCertificatesPage = () => {
 
       <div className="container mx-auto px-4 py-8">
         {/* Sección de Contenido */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8"> {/* Cambiamos a 4 columnas */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Columna Izquierda (Texto - 3/4 del espacio) */}
           <div className="md:col-span-3 bg-white p-6 rounded-lg shadow-md text-lg">
             <p className="text-gray-700 mb-4">
@@ -55,22 +55,27 @@ const GiftCertificatesPage = () => {
           </div>
 
           {/* Columna Derecha (Tarjeta de Regalo - 1/4 del espacio) */}
-            <div className="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
-                <div className="relative">
-                    <img
-                        src="/gift-card-image.png" // Reemplaza con la imagen de tu tarjeta de regalo
-                        alt="Gift Card"
-                        className="w-full rounded-lg"
-                    />
-                    {/* Botón debajo de la imagen */}
-                    <div className="mt-4 text-center">
-                        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                            <h2 className="text-2xl font-semibold text-white mb-2">Gift Certificate</h2>
-                            <p className="text-white">$150.00 - $2,000.00</p>
-                        </button>
-                    </div>
-                </div>
+          <div className="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
+            <div className="relative">
+              <img
+                src="/gift-card-image.webp" // Reemplaza con la imagen de tu tarjeta de regalo
+                alt="Gift Card"
+                className="w-full rounded-lg"
+              />
+              {/* Botón con efecto hover */}
+              <div className="mt-4 text-center">
+                <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 group relative overflow-hidden">
+                  <span className="block transition-all duration-300 group-hover:-translate-x-full">
+                    <h2 className='text-xl'>Gift Certificate </h2>
+                    <p>$150.00 - $2,000.00</p>
+                  </span>
+                  <span className="absolute inset-0 flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-all duration-300">
+                    Select Amount →
+                  </span>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
 
         {/* Sección de Información Adicional */}

@@ -40,7 +40,7 @@ const ContactPage = () => {
       <section
         className="relative w-full h-80 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("/contact.jpg")', // Reemplaza con tu imagen
+          backgroundImage: 'url("/contact.webp")', // Reemplaza con tu imagen
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
