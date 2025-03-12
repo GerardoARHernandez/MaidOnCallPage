@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import GiftCertificatesPage from "./pages/GiftCertificatesPage";
 import BlogPage from "./pages/BlogPage";
 import ServiceRoutes from "./routes/ServiceRoutes";
+import BlogRoutes from "./routes/BlogRoutes";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="certificates" element={ <GiftCertificatesPage /> } />
           </Routes>
             <ServiceRoutes />
+            <BlogRoutes />
       </div>
       <Footer />
     </>

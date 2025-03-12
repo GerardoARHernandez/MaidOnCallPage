@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ServicesDropdown from "./ServicesDropdown";
 import HeaderMobile from "./HeaderMobile";
+import ButtonAppoinment from "../ButtonAppoinment";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -151,7 +152,9 @@ const Header = () => {
     <>
       <header className="bg-white shadow-xl">
         <div className="container mx-auto flex justify-between items-center p-4">
-          <div className="text-2xl font-bold text-blue-600">Maid on Call</div>
+          
+          <a href="/#"><div className="text-2xl font-bold text-blue-600">Maid on Call</div></a>
+
           <nav className="hidden md:flex space-x-6 text-xl items-center">
             <div className="relative">
               <div className="flex items-center">
@@ -252,9 +255,7 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <button className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-            Book Appointment
-          </button>
+          <ButtonAppoinment />
           <button className="md:hidden" onClick={toggleMenu}>
             <svg
               className="w-6 h-6"

@@ -1,4 +1,5 @@
 
+import ButtonAppoinment from "../components/ButtonAppoinment"
 import HowItWorks from "../components/HomePage/HowItWorks"
 import OurServices from "../components/HomePage/OurServices"
 import Reasons from "../components/HomePage/Reasons"
@@ -18,10 +19,8 @@ const HomePage = () => {
           <p className="text-gray-600 mb-8">
             Maid on call is here to offer you a life experience in residential and commercial cleaning services.
           </p>
-          <div className="space-x-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
-              Book Appointment
-            </button>
+          <div className="space-x-4 flex flex-col items-center">
+            <ButtonAppoinment />
           </div>
         </div>
       </section>

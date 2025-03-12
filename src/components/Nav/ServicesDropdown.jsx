@@ -45,9 +45,9 @@ const ServicesDropdown = forwardRef(
         One Time Regular Cleaning
       </Link>
       <Link
-        to="/services/move-in-cleaning"
+        to="/move-in-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/move-in-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/move-in-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -63,18 +63,18 @@ const ServicesDropdown = forwardRef(
         Move Out Cleaning
       </Link>
       <Link
-        to="/services/condo-apartment-cleaning"
+        to="/apartment-condo-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/condo-apartment-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/apartment-condo-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Condo - Apartment Cleaning
       </Link>
       <Link
-        to="/services/post-construction-cleaning"
+        to="/post-construction-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/post-construction-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/post-construction-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -90,7 +90,7 @@ const ServicesDropdown = forwardRef(
         Post Renovation Cleaning
       </Link>
       <Link
-        to="office-cleaning-ottawa"
+        to="/office-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
           isActive("/office-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
@@ -109,9 +109,9 @@ const ServicesDropdown = forwardRef(
         Cleaning And Organization
       </Link>
       <Link
-        to="/services/short-term-rental-airbnb"
+        to="/short-term-rental-airbnb-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/short-term-rental-airbnb") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/short-term-rental-airbnb-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >

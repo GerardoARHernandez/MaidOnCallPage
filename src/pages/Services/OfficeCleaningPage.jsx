@@ -1,3 +1,4 @@
+import ButtonAppoinment from "../../components/ButtonAppoinment";
 
 
 const OfficeCleaningPage = () => {
@@ -13,8 +14,9 @@ const OfficeCleaningPage = () => {
             }}
           >
             <div className="absolute inset-0 bg-blue-900 opacity-55"></div>
-            <div className="relative z-10 text-center">
+            <div className="relative z-10 text-center flex flex-col items-center">
               <h1 className="text-5xl font-bold text-white mb-4">Office Cleaning</h1>
+                <ButtonAppoinment />
             </div>
           </section>
     

@@ -28,7 +28,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Office Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/regular-house-cleaning-ottawa" >
+                <a href="/office-cleaning-ottawa" >
                   <img
                     src="/service-2.webp"
                     alt="Office Cleaning"
@@ -45,7 +45,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Condo & Apartment Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="/apartment-condo-cleaning-ottawa">
                   <img
                     src="/service-3.webp"
                     alt="Condo & Apartment Cleaning"
@@ -62,7 +62,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Move-in & Move-out Cleans */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="/move-in-cleaning-ottawa">
                   <img
                     src="/service-4.webp"
                     alt="Move-in & Move-out Cleans"
@@ -79,7 +79,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Post Construction Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="post-construction-cleaning-ottawa" >
                   <img
                     src="/service-5.webp"
                     alt="Post Construction Cleaning"
@@ -96,7 +96,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Short-Term & Airbnb Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="short-term-rental-airbnb-ottawa">
                   <img
                     src="/service-6.webp"
                     alt="Short-Term & Airbnb Cleaning"
