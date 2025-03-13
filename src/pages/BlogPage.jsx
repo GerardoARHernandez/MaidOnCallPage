@@ -23,7 +23,7 @@ const BlogPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {/* Blog Post 1 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden mb">
-            <a href="/tips-for-cleaning-and-disinfecting-your-garbage-collector">
+            <a href="/blog/tips-for-cleaning-and-disinfecting-your-garbage-collector">
               <img
                 src="/blog1.webp" // Reemplaza con la imagen del blog post
                 alt="Blog Post 1"
@@ -36,7 +36,7 @@ const BlogPage = () => {
               <p className="text-gray-600 mb-4">
               Cleaning the garbage area is an essential task in our homes, even though it may not be the most pleasant one. Developing the habit of cleaning the garbage area frequently will make this chore less unpleasant. 
               </p>
-              <a href="/tips-for-cleaning-and-disinfecting-your-garbage-collector" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/tips-for-cleaning-and-disinfecting-your-garbage-collector" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>
@@ -44,7 +44,7 @@ const BlogPage = () => {
 
           {/* Blog Post 2 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <a href="/origin-of-mothers-day-why-that-give-away-flowers">
+            <a href="/blog/origin-of-mothers-day-why-that-give-away-flowers">
               <img
                 src="/blog2.webp" // Reemplaza con la imagen del blog post
                 alt="Blog Post 2"
@@ -56,7 +56,7 @@ const BlogPage = () => {
               <p className="text-gray-600 mb-4">
               Mother’s Day is one of those dates that is hard to forget. Do you want to give a unique touch to this celebration? Here you will find gift ideas and plans for your mother to enjoy her day as she deserves.
               </p>
-              <a href="/origin-of-mothers-day-why-that-give-away-flowers" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/origin-of-mothers-day-why-that-give-away-flowers" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>
@@ -64,7 +64,7 @@ const BlogPage = () => {
 
           {/* Blog Post 3 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <a href="/how-to-clean-your-mattress">
+            <a href="/blog/how-to-clean-your-mattress">
               <img
                 src="/blog3.webp" // Reemplaza con la imagen del blog post
                 alt="Blog Post 3"
@@ -76,7 +76,7 @@ const BlogPage = () => {
               <p className="text-gray-600 mb-4">
                 Have a bed clean and disinfected is essential for health and good sleep. It is a place very important to our rest and tranquility.
               </p>
-              <a href="/how-to-clean-your-mattress" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/how-to-clean-your-mattress" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>
@@ -84,7 +84,7 @@ const BlogPage = () => {
 
           {/* Blog Post 4 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <a href="/how-to-wash-the-dishwasher">
+            <a href="/blog/how-to-wash-the-dishwasher">
               <img
                 src="/blog4.webp" // Reemplaza con la imagen del blog post
                 alt="Blog Post 4"
@@ -104,7 +104,7 @@ const BlogPage = () => {
 
           {/* Blog Post 5 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <a href="/keep-your-home-flavored">
+            <a href="/blog/keep-your-home-flavored">
               <img
                 src="/blog5.webp" 
                 alt="Blog Post 5"
@@ -116,7 +116,7 @@ const BlogPage = () => {
               <p className="text-gray-600 mb-4">
               A home set promotes the well-being of the family and helps the feeling of order and cleanliness in your spaces. Your scented house will calm you mind while tea you relax after a hard day of work or study, giving said place a presence much more cozy. Experts they say that a smell welcome can help you sleep better.
               </p>
-              <a href="/keep-your-home-flavored" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/keep-your-home-flavored" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>

@@ -22,11 +22,11 @@ function App() {
             <Route path="about" element={ <AboutPage /> } />
             <Route path="faq" element={ <FAQPage /> } />
             <Route path="blog" element={ <BlogPage /> } />
+            <Route path="blog/*" element={<BlogRoutes />} /> {/* Aquí se anidan las rutas del blog */}
             <Route path="contact" element={ <ContactPage /> } />
             <Route path="certificates" element={ <GiftCertificatesPage /> } />
           </Routes>
             <ServiceRoutes />
-            <BlogRoutes />
       </div>
       <Footer />
     </>
