@@ -5,7 +5,7 @@ const GiftCertificatesPage = () => {
     <>
       {/* Hero Section (1/4 del tamaño) */}
       <section
-        className="relative w-full h-64 flex items-center justify-center"
+        className="relative w-full h-48 md:h-64 flex items-center justify-center"
         style={{
           backgroundImage: 'url("/certificate.webp")', // Reemplaza con tu imagen
           backgroundSize: 'cover',
@@ -14,7 +14,7 @@ const GiftCertificatesPage = () => {
       >
         <div className="absolute inset-0 bg-blue-900 opacity-55"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Gift Certificate</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Gift Certificate</h1>
         </div>
       </section>
 
@@ -62,9 +62,14 @@ const GiftCertificatesPage = () => {
                 alt="Gift Card"
                 className="w-full rounded-lg"
               />
-              {/* Botón con efecto hover */}
+              {/* Botón con efecto hover y clic */}
               <div className="mt-4 text-center">
-                <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 group relative overflow-hidden">
+                <a
+                  href="/product/demo"
+                  target="_blank" // Abre el enlace en una nueva pestaña
+                  rel="noopener noreferrer" // Mejora la seguridad
+                  className="block w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 group relative overflow-hidden"
+                >
                   <span className="block transition-all duration-300 group-hover:-translate-x-full">
                     <h2 className='text-xl'>Gift Certificate </h2>
                     <p>$150.00 - $2,000.00</p>
@@ -72,19 +77,20 @@ const GiftCertificatesPage = () => {
                   <span className="absolute inset-0 flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-all duration-300">
                     Select Amount →
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Sección de Información Adicional */}
-        <div className="mt-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Terms & Conditions</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+        {/* <div className="mt-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Terms & Conditions</h2>
+          <p className="text-gray-600 mx-auto">
             Gift certificates are non-refundable and cannot be exchanged for cash. They are valid for one year from the date of purchase. Please ensure you use your gift certificate before the expiration date.
           </p>
-        </div>
+        </div> */}
+
       </div>
     </>
   );

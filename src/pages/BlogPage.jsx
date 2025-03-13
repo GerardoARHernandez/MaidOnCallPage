@@ -124,17 +124,19 @@ const BlogPage = () => {
 
           {/* Blog Post 6 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <img
-              src="/blog6.webp" // Reemplaza con la imagen del blog post
-              alt="Blog Post 6"
-              className="w-full h-48 object-cover"
-            />
+            <a href="/blog/follow-these-tips-to-wash-your-fabric-curtains">
+              <img
+                src="/blog6.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 6"
+                className="w-full h-48 object-cover"
+              />
+            </a>
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">Follow these tips to wash your fabric curtains</h2>
               <p className="text-gray-600 mb-4">
               Curtains are an essential part of home decoration and, like furniture, they accumulate a lot of dust and dirt over time. This is why it is Maid On Call. We recommend washing them every three months and one way to remember it is to do it with each change of season.
               </p>
-              <a href="#" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/follow-these-tips-to-wash-your-fabric-curtains" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>
@@ -142,17 +144,18 @@ const BlogPage = () => {
 
           {/* Blog Post 7 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <img
-              src="/blog7.webp" // Reemplaza con la imagen del blog post
-              alt="Blog Post 7"
-              className="w-full h-48 object-cover"
-            />
+            <a href="/blog/tricks-to-keep-the-childrens-room-ordered-and-gain-space">
+              <img
+                src="/blog7.webp"
+                alt="Blog Post 7"
+                className="w-full h-48 object-cover"
+              /></a>
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">Tricks to Keep the Children’s Room Ordered And Gain Space</h2>
               <p className="text-gray-600 mb-4">
               Let’s see some tricks that I always recommend to keep tidy the children ‘s room and also gain some space. I’m going to teach the best containers for your bedroom, some ideas to store toys and furniture further practical that you can place in your room. Let’s go to it!
               </p>
-              <a href="#" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/tricks-to-keep-the-childrens-room-ordered-and-gain-space" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>
@@ -160,17 +163,18 @@ const BlogPage = () => {
 
           {/* Blog Post 8 */}
           <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
-            <img
-              src="/blog8.webp" // Reemplaza con la imagen del blog post
-              alt="Blog Post 8"
-              className="w-full h-48 object-cover"
-            />
+            <a href="/blog/how-to-file-documents-at-home-and-in-the-office">
+              <img
+                src="/blog8.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 8"
+                className="w-full h-48 object-cover"
+              /></a>
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">How to File Documents at Home and in the Office</h2>
               <p className="text-gray-600 mb-4">
               Today we are going to see as file documents both at home and in the office. I’m going to give them some ideas to create a filing system efficient and very practical. From now on all documents will be always at hand and well organized. Come on there!
               </p>
-              <a href="#" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/how-to-file-documents-at-home-and-in-the-office" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>

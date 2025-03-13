@@ -112,8 +112,8 @@ const AppartmentCleaningPage = () => {
               </div>
             </div>
 
-            <div className='text-center flex flex-col items-center'>
-                <h2 className='text-4xl my-4'>Need Help With Cleaning?</h2>
+            <div className='text-center flex flex-col items-center pb-10'>
+                <h2 className='text-4xl font-semibold py-8'>Need Help With Cleaning?</h2>
                 <ButtonAppoinment />
             </div>
           </div>

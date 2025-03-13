@@ -139,7 +139,7 @@ const Header = () => {
         FAQ
       </Link>
       <a
-        href="#team"
+        href="/join-our-team"
         className="block px-4 py-2 text-gray-700 hover:bg-blue-200"
         onClick={closeDropdown}
       >

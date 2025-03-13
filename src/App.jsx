@@ -9,6 +9,8 @@ import GiftCertificatesPage from "./pages/GiftCertificatesPage";
 import BlogPage from "./pages/BlogPage";
 import ServiceRoutes from "./routes/ServiceRoutes";
 import BlogRoutes from "./routes/BlogRoutes";
+import JoinOurTeam from "./pages/JoinOurTeam";
+import GiftCard from "./pages/GiftCard";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route path="blog/*" element={<BlogRoutes />} /> {/* Aquí se anidan las rutas del blog */}
             <Route path="contact" element={ <ContactPage /> } />
             <Route path="certificates" element={ <GiftCertificatesPage /> } />
+            <Route path="product/demo" element={ <GiftCard /> } />
+            <Route path="join-our-team" element={ <JoinOurTeam /> } />
           </Routes>
             <ServiceRoutes />
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';

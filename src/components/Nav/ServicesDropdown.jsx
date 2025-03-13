@@ -18,27 +18,27 @@ const ServicesDropdown = forwardRef(
           Regular House Cleaning
         </Link>
       <Link
-        to="/services/spring-cleaning"
+        to="/spring-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/spring-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/spring-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Spring Cleaning
       </Link>
       <Link
-        to="/services/deep-house-cleaning"
+        to="/deep-house-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/deep-house-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/deep-house-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Deep House Cleaning
       </Link>
       <Link
-        to="/services/one-time-regular-cleaning"
+        to="/one-time-regular-cleaning"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/one-time-regular-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/one-time-regular-cleaning") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -154,9 +154,9 @@ const ServicesDropdown = forwardRef(
         Add On & Special Requests
       </Link>
       <Link
-        to="/services/sanitize-service"
+        to="/desinfection-services-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/sanitize-service") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/desinfection-services-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
