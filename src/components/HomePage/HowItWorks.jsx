@@ -1,7 +1,7 @@
 
 const HowItWorks = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-12 pt-20">
+    <div className="flex flex-col items-center justify-center py-12 pt-20 bg-blue-50">
       <h2 className="text-5xl font-bold text-center text-blue-950 mb-8">How It Works</h2>
       <p className="text-center text-lg text-gray-600 mb-8 px-20">
         Taking the stress out of any aspect of cleaning is what we specialize in. We will come to your house and offer a free quote, so you know exactly what you'll be spending.

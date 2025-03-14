@@ -19,7 +19,7 @@ const SpringCleaning = () => {
           </div>
         </section>
   
-        <div className="container mx-auto p-4 pt-24 px-10">
+        <div className="container mx-auto p-4 pt-24 px-5">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
                 {/* Texto (2/3 del espacio) */}
                 <div className="md:col-span-4 pb-20 text-lg">

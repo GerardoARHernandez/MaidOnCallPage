@@ -54,9 +54,9 @@ const ServicesDropdown = forwardRef(
         Move In Cleaning
       </Link>
       <Link
-        to="/services/move-out-cleaning"
+        to="/move-out-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/move-out-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/move-out-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -81,9 +81,9 @@ const ServicesDropdown = forwardRef(
         Post Construction Cleaning
       </Link>
       <Link
-        to="/services/post-renovation-cleaning"
+        to="/post-renovation-cleaning-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/post-renovation-cleaning") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/post-renovation-cleaning-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -100,9 +100,9 @@ const ServicesDropdown = forwardRef(
       </Link>
 
       <Link
-        to="/services/cleaning-and-organization"
+        to="/cleaning-and-organization-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/cleaning-and-organization") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/cleaning-and-organization-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
@@ -118,36 +118,36 @@ const ServicesDropdown = forwardRef(
         Short Term Rental & Airbnb
       </Link>
       <Link
-        to="/services/declutter"
+        to="/declutter-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/declutter") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/declutter-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Declutter
       </Link>
       <Link
-        to="/services/preparation-for-sale"
+        to="/home-preparation-for-sale-cleaning-service-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/preparation-for-sale") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/home-preparation-for-sale-cleaning-service-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Preparation For Sale
       </Link>
       <Link
-        to="/services/staging-basic"
+        to="/home-staging-basic-ottawa"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/staging-basic") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/home-staging-basic-ottawa") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >
         Staging Basic
       </Link>
       <Link
-        to="/services/add-on-special-requests"
+        to="/add-on-special-requests"
         className={`block px-4 py-2  text-gray-700 hover:bg-blue-200 ${
-          isActive("/services/add-on-special-requests") ? "bg-blue-200 text-blue-950" : ""
+          isActive("/add-on-special-requests") ? "bg-blue-200 text-blue-950" : ""
         }`}
         onClick={closeDropdown}
       >

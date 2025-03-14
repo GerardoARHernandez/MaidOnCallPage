@@ -19,7 +19,7 @@ const Sanitize = () => {
           </div>
         </section>
   
-        <div className="container mx-auto p-4 pt-24 px-10">
+        <div className="container mx-auto p-4 pt-24 px-5">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-xl">
             <div className="md:col-span-5 pb-20">
               <p className="text-gray-700 mb-4">We have added disinfection services as an add-on to our cleaning services. If chosen, our teams will sanitize light switches, doorknobs, and other “high touch” surfaces. </p>

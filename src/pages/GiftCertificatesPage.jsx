@@ -44,7 +44,7 @@ const GiftCertificatesPage = () => {
             </ul>
             <p className="text-gray-700 mb-4">
               If you would like an estimate of our cleaning cost based on the size of your home please{' '}
-              <a href="#" className="text-blue-600">
+              <a href="/contact" className="text-blue-600">
                 click here
               </a>{' '}
               or You can contact us by phone at 613-618-0969, by e-mail at{' '}
@@ -66,7 +66,6 @@ const GiftCertificatesPage = () => {
               <div className="mt-4 text-center">
                 <a
                   href="/product/demo"
-                  target="_blank" // Abre el enlace en una nueva pestaña
                   rel="noopener noreferrer" // Mejora la seguridad
                   className="block w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 group relative overflow-hidden"
                 >

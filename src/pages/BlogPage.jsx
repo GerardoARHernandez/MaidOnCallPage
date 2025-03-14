@@ -180,6 +180,75 @@ const BlogPage = () => {
             </div>
           </div>
 
+          {/* Blog Post 9 */}
+          <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
+            <a href="/blog/change-of-season-to-order-the-closet">
+              <img
+                src="/blog-11.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 9"
+                className="w-full h-48 object-cover"
+              /></a>
+            <div className="p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">Change Of Season to Order the Closet!</h2>
+              <p className="text-gray-600 mb-4">There is the group of people who hate the cold, and the group of people who love it, whatever yours, the reality is one: we are saying goodbye to winter to start spring.
+              </p>
+              <a href="/blog/change-of-season-to-order-the-closet" className="text-blue-600 hover:text-blue-700 font-semibold">
+                Read More →
+              </a>
+            </div>
+          </div>
+
+          {/* Blog Post 10 */}
+          <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
+            <a href="/blog/cleaning-is-health-and-safety-in-your-home">
+              <img
+                src="/blog-12.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 9"
+                className="w-full h-48 object-cover"
+              /></a>
+            <div className="p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">Cleaning is Health and Safety in Your Home</h2>
+              <p className="text-gray-600 mb-4">Many times, we ignore the number of health and safety benefits that having a clean house gives us, even more so if we live with more people and children.</p>
+              <a href="/blog/cleaning-is-health-and-safety-in-your-home" className="text-blue-600 hover:text-blue-700 font-semibold">
+                Read More →
+              </a>
+            </div>
+          </div>
+
+          {/* Blog Post 11 */}
+          <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
+            <a href="/blog/difference-sanitizers-and-disinfectants">
+              <img
+                src="/blog-13.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 9"
+                className="w-full h-48 object-cover"
+              /></a>
+            <div className="p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">Difference between Sanitizers and Disinfectants</h2>
+              <p className="text-gray-600 mb-4">Most likely, in recent years you have heard the word “disinfectant” more than necessary, due to the pandemic we have experienced. Still , most people probably don’t know the difference between sanitizers and disinfectants. </p>
+              <a href="/blog/difference-sanitizers-and-disinfectants" className="text-blue-600 hover:text-blue-700 font-semibold">
+                Read More →
+              </a>
+            </div>
+          </div>
+
+          {/* Blog Post 12 */}
+          <div className="bg-blue-50 rounded-lg shadow-xl overflow-hidden">
+            <a href="/blog/5-health-benefits-of-a-clean-home-that-will-surprise-you">
+              <img
+                src="/blog-14.webp" // Reemplaza con la imagen del blog post
+                alt="Blog Post 9"
+                className="w-full h-48 object-cover"
+              /></a>
+            <div className="p-6">
+              <h2 className="text-xl font-bold text-gray-800 mb-2">5 Health Benefits Of A Clean Home That Will Surprise You </h2>
+              <p className="text-gray-600 mb-4">We always try to keep our home clean, but some days we unconsciously wonder: What would be wrong if I put cleaning my house aside and took a break?</p>
+              <a href="/blog/5-health-benefits-of-a-clean-home-that-will-surprise-you" className="text-blue-600 hover:text-blue-700 font-semibold">
+                Read More →
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </>

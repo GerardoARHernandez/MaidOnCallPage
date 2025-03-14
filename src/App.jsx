@@ -11,6 +11,7 @@ import ServiceRoutes from "./routes/ServiceRoutes";
 import BlogRoutes from "./routes/BlogRoutes";
 import JoinOurTeam from "./pages/JoinOurTeam";
 import GiftCard from "./pages/GiftCard";
+import Privacy from "./pages/Privacy";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="certificates" element={ <GiftCertificatesPage /> } />
             <Route path="product/demo" element={ <GiftCard /> } />
             <Route path="join-our-team" element={ <JoinOurTeam /> } />
+            <Route path="privacy" element={ <Privacy /> } />
           </Routes>
             <ServiceRoutes />
       </div>
