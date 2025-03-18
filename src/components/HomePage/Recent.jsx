@@ -63,7 +63,7 @@ const Recent = () => {
 
   return (
     <div className="px-8 pb-12 pt-20 bg-white">
-      <h2 className="text-5xl font-bold text-center text-blue-950 mb-16">Our Recent Cleaning</h2>
+      <h2 className="text-5xl font-bold text-center text-blue-950 mb-16">Our Recents Cleaning</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {images.map((image, index) => (
           <div
