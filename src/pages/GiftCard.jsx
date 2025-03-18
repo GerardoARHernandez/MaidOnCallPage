@@ -16,7 +16,6 @@ const GiftCard = () => {
   });
 
   const [showCustomAmount, setShowCustomAmount] = useState(false);
-  const [showForm, setShowForm] = useState(true); // Estado para mostrar/ocultar el formulario
   const [selectedAmount, setSelectedAmount] = useState("150"); // Estado para el monto seleccionado
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar el modal
   const [zoomStyle, setZoomStyle] = useState({}); // Estado para el efecto de zoom
@@ -30,21 +29,21 @@ const GiftCard = () => {
     setSelectedAmount(value);
 
     if (value === "other") {
-      setShowCustomAmount(true);
+      setShowCustomAmount(true); // Mostrar el campo de monto personalizado
       setValue("amount", ""); // Limpiar el valor si se selecciona "Other Amount"
     } else if (value === "") {
-      setShowForm(false); // Ocultar el formulario si se selecciona "Choose an amount"
+      setShowCustomAmount(false); // Ocultar el campo de monto personalizado
+      setValue("amount", ""); // Limpiar el valor si se selecciona "Choose an amount"
     } else {
-      setShowCustomAmount(false);
+      setShowCustomAmount(false); // Ocultar el campo de monto personalizado
       setValue("amount", value); // Establecer el valor seleccionado
-      setShowForm(true); // Mostrar el formulario si se selecciona un monto válido
     }
   };
 
   const handleClear = () => {
-    setShowForm(false); // Ocultar el formulario
     setSelectedAmount(""); // Limpiar el monto seleccionado
     setValue("amount", ""); // Limpiar el valor del campo
+    setShowCustomAmount(false); // Ocultar el campo de monto personalizado
   };
 
   // Función para abrir el modal
@@ -184,8 +183,8 @@ const GiftCard = () => {
             </div>
           )}
 
-          {/* Formulario oculto/mostrado dinámicamente */}
-          {showForm && (
+          {/* Mostrar el formulario solo si se ha seleccionado un monto */}
+          {selectedAmount && (
             <>
               {/* Campo para el destinatario */}
               <div>
