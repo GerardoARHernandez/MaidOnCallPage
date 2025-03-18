@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { CiInstagram } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-12">
@@ -165,20 +165,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center text-base text-gray-300 hover:text-blue-400 transition duration-300"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M16.494 4.506a7.97 7.97 0 012.24 5.674c0 4.418-3.582 8-8 8a8 8 0 110-16 7.97 7.97 0 015.76 2.326zM12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"
-                    />
-                  </svg>
+                  <CiInstagram className='mr-2'/>
                   Follow Us on Instagram
                 </a>
               </li>
