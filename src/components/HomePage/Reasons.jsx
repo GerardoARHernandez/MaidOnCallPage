@@ -1,5 +1,5 @@
 import { BiLike } from "react-icons/bi";
-import { FaJugDetergent } from "react-icons/fa6";
+import { FaAirFreshener } from "react-icons/fa";
 import { FaMoneyBillAlt } from "react-icons/fa";
 
 const Reasons = () => {
@@ -9,8 +9,8 @@ const Reasons = () => {
       <div className="flex flex-wrap justify-center gap-8">
         {/* Consistent */}
         <div className="text-center w-80">
-          <div className="relative rounded-full w-24 h-24 bg-blue-900 flex items-center justify-center mx-auto mb-4">
-            <FaJugDetergent className="text-6xl text-white absolute" />
+          <div className="relative rounded-full w-24 h-24 bg-blue-900 hover:bg-pink-600 flex items-center justify-center mx-auto mb-4">
+            <FaAirFreshener className="text-6xl text-white absolute" />
           </div>
           <h3 className="text-2xl font-semibold mb-4">Consistent</h3>
           <p className="text-gray-600 text-lg">
@@ -21,7 +21,7 @@ const Reasons = () => {
 
         {/* Reliable */}
         <div className="text-center w-80">
-          <div className="relative rounded-full w-24 h-24 bg-blue-900 flex items-center justify-center mx-auto mb-4">
+          <div className="relative rounded-full w-24 h-24 bg-blue-900 hover:bg-pink-600 flex items-center justify-center mx-auto mb-4">
             <BiLike className="text-6xl text-white absolute" />
           </div>
           <h3 className="text-2xl font-semibold mb-4">Reliable</h3>
@@ -33,7 +33,7 @@ const Reasons = () => {
 
         {/* Affordable */}
         <div className="text-center w-80">
-          <div className="relative rounded-full w-24 h-24 bg-blue-900 flex items-center justify-center mx-auto mb-4">
+          <div className="relative rounded-full w-24 h-24 bg-blue-900 hover:bg-pink-600 flex items-center justify-center mx-auto mb-4">
             <FaMoneyBillAlt className="text-6xl text-white absolute" />
           </div>
           <h3 className="text-2xl font-semibold mb-4">Affordable</h3>

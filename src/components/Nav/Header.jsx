@@ -9,6 +9,7 @@ const Header = () => {
   const [isHomeOpen, setIsHomeOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [timer, setTimer] = useState(null); // Estado para el temporizador
   const dropdownRef = useRef(null);
   const servicesDropdownRef = useRef(null);
   const location = useLocation();
@@ -32,6 +33,28 @@ const Header = () => {
     };
   }, []);
 
+  // Reiniciar el temporizador cuando el usuario interactúa con el menú
+  const resetTimer = () => {
+    if (timer) {
+      clearTimeout(timer); // Limpiar el temporizador anterior
+    }
+    const newTimer = setTimeout(() => {
+      closeDropdown(); // Cerrar menús después de 5 segundos de inactividad
+    }, 5000); // 5000 ms = 5 segundos
+    setTimer(newTimer);
+  };
+
+  // Iniciar el temporizador cuando se abre un menú desplegable
+  useEffect(() => {
+    if (isHomeOpen || isServicesOpen) {
+      resetTimer(); // Iniciar el temporizador
+    } else {
+      if (timer) {
+        clearTimeout(timer); // Limpiar el temporizador si los menús están cerrados
+      }
+    }
+  }, [isHomeOpen, isServicesOpen]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -39,16 +62,21 @@ const Header = () => {
   const toggleHome = () => {
     setIsHomeOpen(!isHomeOpen);
     setIsServicesOpen(false); // Cerrar el menú de servicios si está abierto
+    resetTimer(); // Reiniciar el temporizador al interactuar
   };
 
   const toggleServices = () => {
     setIsServicesOpen(!isServicesOpen);
     setIsHomeOpen(false); // Cerrar el menú de Home si está abierto
+    resetTimer(); // Reiniciar el temporizador al interactuar
   };
 
   const closeDropdown = () => {
     setIsHomeOpen(false);
     setIsServicesOpen(false);
+    if (timer) {
+      clearTimeout(timer); // Limpiar el temporizador al cerrar los menús
+    }
   };
 
   const closeMobileMenu = () => {
@@ -95,13 +123,18 @@ const Header = () => {
     <div
       ref={dropdownRef}
       className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50"
+      onMouseEnter={resetTimer} // Reiniciar el temporizador al interactuar con el menú
     >
       <Link
         to="/about"
         className={`block px-4 py-2 text-gray-700 hover:bg-blue-200 ${
           isActive("/about") ? "bg-blue-200 text-blue-950" : ""
         }`}
-        onClick={closeDropdown}
+        onClick={() => {
+          closeDropdown();
+          resetTimer(); // Reiniciar el temporizador al hacer clic
+        }}
+        onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         About us
       </Link>
@@ -113,7 +146,9 @@ const Header = () => {
         onClick={() => {
           closeDropdown();
           scrollToSection("#company-values");
+          resetTimer(); // Reiniciar el temporizador al hacer clic
         }}
+        onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         Company Values
       </Link>
@@ -125,7 +160,9 @@ const Header = () => {
         onClick={() => {
           closeDropdown();
           scrollToSection("#why-choose-us");
+          resetTimer(); // Reiniciar el temporizador al hacer clic
         }}
+        onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         Why Choose us
       </Link>
@@ -134,14 +171,22 @@ const Header = () => {
         className={`block px-4 py-2 text-gray-700 hover:bg-blue-200 ${
           isActive("/faq") ? "bg-blue-200 text-blue-950" : ""
         }`}
-        onClick={closeDropdown}
+        onClick={() => {
+          closeDropdown();
+          resetTimer(); // Reiniciar el temporizador al hacer clic
+        }}
+        onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         FAQ
       </Link>
       <a
         href="/join-our-team"
         className="block px-4 py-2 text-gray-700 hover:bg-blue-200"
-        onClick={closeDropdown}
+        onClick={() => {
+          closeDropdown();
+          resetTimer(); // Reiniciar el temporizador al hacer clic
+        }}
+        onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         Join Our Team
       </a>
