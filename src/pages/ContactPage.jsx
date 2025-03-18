@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import { MdOutlineEmail } from 'react-icons/md';
+import { TfiEmail } from "react-icons/tfi";
 import { FiPhone } from 'react-icons/fi';
 import { BiAlarm } from 'react-icons/bi';
 import AlertMessage from '../components/AlertMessage';
@@ -162,17 +162,17 @@ const ContactPage = () => {
               </h2>
               <div className="mb-4">
                 <p className="text-gray-600 flex items-center">
-                  <MdOutlineEmail size={46} className="mr-2" />
+                  <TfiEmail size={42} className="mr-2" />
                   <strong className="text-lg pl-2">booking@maidoncall.ca</strong>
                 </p>
                 <p className="text-gray-600 flex items-center mt-2">
-                  <FiPhone size={46} className="mr-2" />
+                  <FiPhone size={42} className="mr-2" />
                   <strong className="text-lg pl-2">613-618-0969</strong>
                 </p>
               </div>
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-gray-700 mb-2 flex items-center pl-2">
-                  <BiAlarm size={46} className="mr-2" />
+                  <BiAlarm size={42} className="mr-2" />
                   Operating Hours
                 </h3>
                 <div className="pl-14">

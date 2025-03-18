@@ -1,36 +1,32 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 const ButtonAppointment = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar el modal
-  const { register, handleSubmit, formState: { errors } } = useForm(); // Configuración de react-hook-form
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  // Función para abrir el modal
   const openModal = () => setIsModalOpen(true);
-
-  // Función para cerrar el modal
   const closeModal = () => setIsModalOpen(false);
 
-  // Función para manejar el envío del formulario
   const onSubmit = (data) => {
-    console.log(data); // Aquí puedes enviar los datos a tu API o hacer lo que necesites
-    closeModal(); // Cierra el modal después de enviar el formulario
+    console.log(data);
+    closeModal();
   };
 
   return (
     <>
-      {/* Botón para abrir el modal */}
+      {/* Botón responsivo */}
       <button
         onClick={openModal}
-        className="hidden md:block bg-blue-800 text-white px-4 py-3 rounded-lg hover:bg-blue-900"
+        className="w-11/12 md:w-8/12 bg-blue-800 text-white px-3 py-3 rounded-lg hover:bg-blue-950 text-sm lg:text-base font-semibold"
       >
         Book Appointment
       </button>
 
-      {/* Modal */}
+      {/* Modal (código sin cambios) */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-8 rounded-lg w-full max-w-md">
+          <div className="bg-white p-8 mx-5 md:mx-2 rounded-lg w-full max-w-md">
             <h2 className="text-2xl font-bold mb-6 text-blue-950">Book Appointment</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               {/* Campo First Name */}
@@ -39,7 +35,7 @@ const ButtonAppointment = () => {
                 <input
                   type="text"
                   {...register('firstName', { required: 'First Name is required' })}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 {errors.firstName && (
                   <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>
@@ -52,7 +48,7 @@ const ButtonAppointment = () => {
                 <input
                   type="text"
                   {...register('lastName', { required: 'Last Name is required' })}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-blue-300  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 {errors.lastName && (
                   <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>
@@ -71,7 +67,7 @@ const ButtonAppointment = () => {
                       message: 'Invalid email address',
                     },
                   })}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-blue-300  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
@@ -90,7 +86,7 @@ const ButtonAppointment = () => {
                       message: 'Invalid phone number',
                     },
                   })}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-blue-300  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
                 {errors.phoneNumber && (
                   <p className="text-red-500 text-sm mt-1">{errors.phoneNumber.message}</p>
@@ -98,7 +94,7 @@ const ButtonAppointment = () => {
               </div>
 
               {/* Botones del modal */}
-              <div className="flex justify-end gap-4">
+              <div className="flex justify-center gap-4">
                 <button
                   type="button"
                   onClick={closeModal}

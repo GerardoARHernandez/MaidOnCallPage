@@ -187,8 +187,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright y Privacidad */}
-        <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; Copyright 2025 MAIDONCALL | Build By TekRobot</p> 
+        <div className="mt-8 pt-8 border-t-2 border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>&copy; Copyright {new Date().getFullYear()} MAIDONCALL | Build By TekRobot</p> 
           <div className="flex items-center mt-4 md:mt-0">
             <Link
               to="/privacy"

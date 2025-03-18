@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ServicesDropdown from "./ServicesDropdown";
+import ButtonAppointment from "../ButtonAppoinment";
 
 const HeaderMobile = ({
   isHomeOpen,
@@ -175,12 +176,9 @@ const HeaderMobile = ({
           <div className="border-t border-gray-200 my-2"></div>
 
           {/* Book Appointment Button */}
-          <button
-            className="block w-full px-4 py-3 bg-blue-600 text-white hover:bg-blue-700 text-sm"
-            onClick={closeMobileMenu}
-          >
-            Book Appointment
-          </button>
+          <div className="px-4 py-3">
+            <ButtonAppointment />
+          </div>
         </div>
       </div>
     </div>

@@ -5,9 +5,7 @@ const Privacy = () => {
         <section
             className="relative w-full h-64 flex items-center justify-center"
             style={{
-            backgroundColor: '#0c74c9',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+                backgroundColor: '#09487c',
             }}
         >
             <div className="absolute inset-0 bg-blue-900 opacity-55"></div>

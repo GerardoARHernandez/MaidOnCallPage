@@ -152,10 +152,14 @@ const Header = () => {
     <>
       <header className="bg-white shadow-xl">
         <div className="container mx-auto flex justify-between items-center p-4">
-          
-          <a href="/#"><div className="text-2xl font-bold text-blue-600">Maid on Call</div></a>
+          {/* Logo */}
+          <a href="/#">
+            <div className="text-2xl font-bold text-blue-600">Maid on Call</div>
+          </a>
 
-          <nav className="hidden md:flex space-x-6 text-xl items-center">
+          {/* Menú de navegación (visible en pantallas medianas y grandes) */}
+          <nav className="hidden md:flex space-x-7 text-lg lg:text-xl items-center px-2">
+            {/* Menú desplegable para Home */}
             <div className="relative">
               <div className="flex items-center">
                 <Link
@@ -171,7 +175,9 @@ const Header = () => {
                   className="text-gray-700 hover:text-blue-600 ml-1 focus:outline-none"
                 >
                   <svg
-                    className={`w-4 h-4 transition-transform ${isHomeOpen ? 'transform rotate-180' : ''}`}
+                    className={`w-4 h-4 transition-transform ${
+                      isHomeOpen ? "transform rotate-180" : ""
+                    }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -205,7 +211,9 @@ const Header = () => {
                   className="text-gray-700 hover:text-blue-600 ml-1 focus:outline-none"
                 >
                   <svg
-                    className={`w-4 h-4 transition-transform ${isServicesOpen ? 'transform rotate-180' : ''}`}
+                    className={`w-4 h-4 transition-transform ${
+                      isServicesOpen ? "transform rotate-180" : ""
+                    }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -230,6 +238,7 @@ const Header = () => {
               )}
             </div>
 
+            {/* Enlaces adicionales */}
             <Link
               to="/blog"
               className={`text-gray-700 hover:text-blue-600 ${
@@ -255,7 +264,12 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <ButtonAppoinment />
+
+          <div className="hidden md:flex w-3/12 mx-1">
+            <ButtonAppoinment />
+          </div>
+
+          {/* Botón de menú móvil (visible solo en pantallas pequeñas) */}
           <button className="md:hidden" onClick={toggleMenu}>
             <svg
               className="w-6 h-6"
@@ -273,6 +287,8 @@ const Header = () => {
             </svg>
           </button>
         </div>
+
+        {/* Menú móvil (visible solo en pantallas pequeñas) */}
         {isMenuOpen && (
           <HeaderMobile
             isHomeOpen={isHomeOpen}
