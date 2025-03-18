@@ -9,11 +9,11 @@ const Footer = () => {
           {/* Logo y Descripción */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src="/path/to/your/logo.png" // Reemplaza con la ruta de tu logo
-              alt="Maid On Call Logo"
-              className="w-32 mb-4"
+              src="/Logo_SHR_Multi.png" // Reemplaza con la ruta de tu logo
+              alt="SHR Multiservice Logo"
+              className="w-40 mb-4"
             />
-            <p className="text-sm text-gray-400">HOME GENERAL SERVICE</p>
+            <p className="text-base text-center text-gray-400 uppercase">SHR MultiService</p>
           </div>
 
           {/* Services */}
@@ -32,7 +32,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.to}
-                    className="text-sm text-gray-300 hover:text-blue-400 transition duration-300"
+                    className="text-base text-gray-300 hover:text-blue-400 transition duration-300"
                   >
                     {link.text}
                   </Link>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={link.to}
-                    className="text-sm text-gray-300 hover:text-blue-400 transition duration-300"
+                    className="text-base text-gray-300 hover:text-blue-400 transition duration-300"
                   >
                     {link.text}
                   </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
                 "Osgoode",
                 "Stittville",
               ].map((location, index) => (
-                <li key={index} className="text-sm text-gray-300">
+                <li key={index} className="text-base text-gray-300">
                   {location}
                 </li>
               ))}
@@ -116,7 +116,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <a
                   href="mailto:booking@maidoncall.ca"
-                  className="flex items-center text-sm text-gray-300 hover:text-blue-400 transition duration-300"
+                  className="flex items-center text-base text-gray-300 hover:text-blue-400 transition duration-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const Footer = () => {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-sm text-gray-300 hover:text-blue-400 transition duration-300"
+                  className="flex items-center text-base text-gray-300 hover:text-blue-400 transition duration-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -187,8 +187,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright y Privacidad */}
-        <div className="mt-8 pt-8 border-t-2 border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; Copyright {new Date().getFullYear()} MAIDONCALL | Build By TekRobot</p> 
+        <div className="mt-8 pt-8 border-t-2 border-gray-700 flex flex-col md:flex-row justify-between items-center text-base text-gray-400">
+          <p>&copy; Copyright {new Date().getFullYear()} SHR MULTISERVICE | Build By TekRobot</p> 
           <div className="flex items-center mt-4 md:mt-0">
             <Link
               to="/privacy"

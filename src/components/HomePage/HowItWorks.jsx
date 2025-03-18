@@ -60,7 +60,7 @@ const HowItWorks = () => {
             </div>
           </div>
           <p className="mt-4 text-gray-600">
-            A crew member from Maid On Call will come to your home or business for the scheduled appointment.
+            A crew member from SHR Multiservice will come to your home or business for the scheduled appointment.
           </p>
         </div>
 

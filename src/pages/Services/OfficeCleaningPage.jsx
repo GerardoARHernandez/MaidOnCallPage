@@ -24,8 +24,8 @@ const OfficeCleaningPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {/* Texto (2/3 del espacio) */}
               <div className="md:col-span-3 pb-20 text-lg">
-                <p className="text-gray-700 mb-4"> Maid on Call <a href="ottawa.ca" className="text-blue-400">Ottawa</a> office cleaning service is an efficient solution for your business, a clean and organized office makes a happier and more productive environment. </p>
-                <p className="text-gray-700 mb-4">Whether you choose a one-time cleaning or request our service regularly (weekly, bi-weekly, monthly), MAID ON CALL cleaners will make the difference by providing an excellent cleaning service.</p>
+                <p className="text-gray-700 mb-4"> SHR Multiservice <a href="ottawa.ca" className="text-blue-400">Ottawa</a> office cleaning service is an efficient solution for your business, a clean and organized office makes a happier and more productive environment. </p>
+                <p className="text-gray-700 mb-4">Whether you choose a one-time cleaning or request our service regularly (weekly, bi-weekly, monthly), SHR Multiservice cleaners will make the difference by providing an excellent cleaning service.</p>
                 <p className="text-gray-700 mb-4">Our team would take care of all areas including conference rooms, community centre, waiting rooms, offices, club halls</p>
     
                 <div>

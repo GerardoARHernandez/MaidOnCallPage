@@ -5,7 +5,7 @@ import { FaMoneyBillAlt } from "react-icons/fa";
 const Reasons = () => {
   return (
     <div className="flex flex-col items-center justify-center py-12 pt-24">
-      <h2 className="text-5xl font-bold text-center text-blue-950 mb-24">Why Choose MAID ON CALL</h2>
+      <h2 className="text-5xl font-bold text-center text-blue-950 mb-24">Why Choose SHR Multiservice</h2>
       <div className="flex flex-wrap justify-center gap-8">
         {/* Consistent */}
         <div className="text-center w-80">

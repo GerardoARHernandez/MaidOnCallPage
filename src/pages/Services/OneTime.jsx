@@ -24,7 +24,7 @@ const OneTime = () => {
             {/* Texto (2/3 del espacio) */}
             <div className="md:col-span-3 pb-20">
               <p className="text-gray-700 mb-4 text-lg">
-                A clean home brings balance and happiness to your life, we are a fully trained team, committed to providing the best house cleaning service you deserve in <a href="https://ottawa.ca/en" className='text-blue-500 hover:text-blue-700' target="_blank" rel="noopener noreferrer">Ottawa</a>. With MAID ON CALL one-time regular cleaning, you will see a difference in your house.
+                A clean home brings balance and happiness to your life, we are a fully trained team, committed to providing the best house cleaning service you deserve in <a href="https://ottawa.ca/en" className='text-blue-500 hover:text-blue-700' target="_blank" rel="noopener noreferrer">Ottawa</a>. With SHR Multiservice one-time regular cleaning, you will see a difference in your house.
               </p>
               <h2 className="text-2xl font-semibold mb-4">
                 Complete checklist of our one time regular cleaning service:

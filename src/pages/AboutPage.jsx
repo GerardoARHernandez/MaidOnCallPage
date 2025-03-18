@@ -45,7 +45,7 @@ const AboutPage = () => {
         <section className="bg-blue-50 py-20">
           <div className="container mx-auto max-w-lg md:max-w-3xl lg:max-w-6xl text-lg px-10 md:px-0">
             <p className="mb-6">
-              We are MAID ON CALL, a small family business led by an entrepreneur woman, we have a reliable and passionate team committed to offering you the best cleaning service for your home or business.
+              We are <strong>SHR Multiservice,</strong> a small family business led by an entrepreneur woman, we have a reliable and passionate team committed to offering you the best cleaning service for your home or business.
             </p>
 
             <p className="mb-6">

@@ -25,7 +25,7 @@ const TipsCurtains = () => {
 
         <section className="text-lg mb-7">
           <p className="py-3">
-          Curtains are an essential part of home decoration and, like furniture, they accumulate a lot of dust and dirt over time. This is why it is <strong>Maid On Call.</strong> We recommend washing them every three months and one way to remember it is to do it with each change of season.
+          Curtains are an essential part of home decoration and, like furniture, they accumulate a lot of dust and dirt over time. This is why it is <strong>SHR Multiservice.</strong> We recommend washing them every three months and one way to remember it is to do it with each change of season.
           </p>
         </section>
 

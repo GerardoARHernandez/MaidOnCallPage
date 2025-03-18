@@ -17,7 +17,7 @@ const JoinOurTeam = () => {
       >
         <div className="absolute inset-0 bg-blue-900 opacity-55"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Career At MAID ON CALL</h1>
+          <h1 className="text-5xl font-bold text-white mb-4">Career At SHR Multiservice</h1>
         </div>
       </section>
 

@@ -134,7 +134,7 @@ const BlogPage = () => {
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-2">Follow these tips to wash your fabric curtains</h2>
               <p className="text-gray-600 mb-4">
-              Curtains are an essential part of home decoration and, like furniture, they accumulate a lot of dust and dirt over time. This is why it is Maid On Call. We recommend washing them every three months and one way to remember it is to do it with each change of season.
+              Curtains are an essential part of home decoration and, like furniture, they accumulate a lot of dust and dirt over time. This is why it is SHR Multiservice. We recommend washing them every three months and one way to remember it is to do it with each change of season.
               </p>
               <a href="/blog/follow-these-tips-to-wash-your-fabric-curtains" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →

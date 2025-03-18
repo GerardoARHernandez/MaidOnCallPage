@@ -28,7 +28,7 @@ function FAQPage() {
         answer: 'Yes, we have all the special equipment needed to performance and excellent quality job.',
     },
     {
-        question: 'I would like MAID ON CALL to use my appliances and my own products, is that an issue?',
+        question: 'I would like SHR Multiservice to use my appliances and my own products, is that an issue?',
         answer: 'No, you just let us know what appliances and products you like us to use.',
     },
     {
@@ -53,7 +53,7 @@ function FAQPage() {
         answer: 'Is important to us to meet your expectations, mostly we need to know the size and distribution of your place, the type of service you choose, and any special request you have.',
     },
     {
-        question: 'Is there something that MAID ON CALL doesn’t do?',
+        question: 'Is there something that SHR Multiservice doesn’t do?',
         answer: 'We do everything inside your house or office, we don’t do any duty outside your property.',
     },
     {

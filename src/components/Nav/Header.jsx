@@ -198,8 +198,12 @@ const Header = () => {
       <header className="bg-white shadow-xl">
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* Logo */}
-          <a href="/#">
-            <div className="text-2xl font-bold text-blue-600">Maid on Call</div>
+          <a href="/">
+            <img
+              src="/Logo_SHR_Multi.png" // Ruta de la imagen del logo
+              alt="SHR Multiservice Logo"
+              className="h-24 w-auto" // Ajusta el tamaño del logo
+            />
           </a>
 
           {/* Menú de navegación (visible en pantallas medianas y grandes) */}

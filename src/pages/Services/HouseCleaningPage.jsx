@@ -24,7 +24,7 @@ const HouseCleaningPage = () => {
             {/* Texto (2/3 del espacio) */}
             <div className="md:col-span-3 pb-20">
               <p className="text-gray-700 mb-4">
-                A clean home brings balance and happiness to your life, we’re a fully trained team, committed to providing the best services you deserve. With MAID ON CALL regular house cleaning services in Ottawa, you can choose to book your regular appointment on a weekly, biweekly, monthly or on need bases to benefit from our special rates, also we plan a rotating schedule to take care of extra chores and to keep your place always neat; we will be happy to visit you every time.
+                A clean home brings balance and happiness to your life, we’re a fully trained team, committed to providing the best services you deserve. With SHR Multiservice regular house cleaning services in Ottawa, you can choose to book your regular appointment on a weekly, biweekly, monthly or on need bases to benefit from our special rates, also we plan a rotating schedule to take care of extra chores and to keep your place always neat; we will be happy to visit you every time.
               </p>
               <h2 className="text-2xl font-semibold mb-4">
                 Complete checklist of our Regular House Cleaning service:

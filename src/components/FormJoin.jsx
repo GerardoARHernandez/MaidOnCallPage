@@ -333,7 +333,7 @@ const FormJoin = () => {
         </div>
 
         <div>
-          <label className="block text-gray-700 p-2 rounded">How did you hear about Maid on Call General home services? *</label>
+          <label className="block text-gray-700 p-2 rounded">How did you hear about SHR Multiservice General home services? *</label>
           <input
             type="text"
             {...register('hearAboutUs')}

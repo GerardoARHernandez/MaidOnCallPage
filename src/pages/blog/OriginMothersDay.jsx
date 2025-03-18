@@ -74,7 +74,7 @@ const OriginMothersDay = () => {
                 <li>Further time to share with family. Take advantage and go to a park; or to that site to which has always wanted to go and never go by lack of time</li>
             </ul>
 
-            <p>Having that deep clean your home is a task complicated, but with Maid On Call everything be further easy. It’s not about cleaning, it’s about the health and well-being of your beings dear ones consult already our deep cleaning services and choose the one that best suits your needs!</p>
+            <p>Having that deep clean your home is a task complicated, but with SHR Multiservice everything be further easy. It’s not about cleaning, it’s about the health and well-being of your beings dear ones consult already our deep cleaning services and choose the one that best suits your needs!</p>
         </section>
 
         <h2 className="font-semibold text-2xl pb-14 pt-8">HAPPY MOTHERS DAY</h2>

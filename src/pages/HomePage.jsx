@@ -20,7 +20,7 @@ const HomePage = () => {
               Clean House, Happy Home:<br></br><span className="text-3xl">Let Our Cleaners Handle the Dirty Work.</span>
             </h1>
             <p className="text-gray-700 pt-3 mb-8 text-xl">
-              Maid on call is here to offer you a life experience in residential and commercial cleaning services.
+              SHR Multiservice is here to offer you a life experience in residential and commercial cleaning services.
             </p>
             <div className="space-x-4 flex flex-col items-center">
               <ButtonAppoinment />
@@ -72,7 +72,7 @@ const HomePage = () => {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
               src="/1.webp"
-              alt="IMG Equipo de Maid on Call"
+              alt="IMG Equipo de SHR Multiservice"
               className="rounded-lg"
             />
           </div>
@@ -81,7 +81,7 @@ const HomePage = () => {
                 Professional Cleaning Services for Home and Office
             </h2>
             <p className="text-gray-600 mb-2 text-lg">
-                We are MAID ON CALL, a small family business led by an entrepreneur woman, we have a reliable and passionate team committed to offering you the best cleaning service for your home or business.</p>
+                We are SHR Multiservice, a small family business led by an entrepreneur woman, we have a reliable and passionate team committed to offering you the best cleaning service for your home or business.</p>
 
                 <p className="text-gray-600 mb-2">  Our company has provided progress and opportunity to our community since 2010, we have been known as a company with social responsibility that helps the ones in needs because we are aware of the importance of giving back to thank all the support and loyalty of our clients.</p>
 

@@ -25,7 +25,7 @@ const MoveInCleaning = () => {
                 {/* Texto (2/3 del espacio) */}
                 <div className="md:col-span-4 pb-20">
                         <p className="text-gray-700 mb-4">
-                            Moving is never easy, it is very important to arrive in a perfectly clean space, where all the dirt and grime for the past tenants is being left behind. MAID ON CALL move-in cleaning service is customizable to meet your needs. Our team will clean places that you weren’t aware of, which means cleaning deeply the entire house.<br></br>
+                            Moving is never easy, it is very important to arrive in a perfectly clean space, where all the dirt and grime for the past tenants is being left behind. SHR Multiservice move-in cleaning service is customizable to meet your needs. Our team will clean places that you weren’t aware of, which means cleaning deeply the entire house.<br></br>
                             The best thing about our move in cleaning is that we achieve a comprehensive cleaning in a one day visit. We take care of every detail while doing our job, Among other tasks, we wash the vents and clean inside, the bathrooms will be sanitized, and the kitchen will be ready for your first meal, in one sentence “we take care of all the important space”, don’t worry, we are here!! Just call us and enjoy your new place
                         </p>
                         <h2 className="text-2xl font-semibold mb-4">Complete checklist of our move-in cleaning service:</h2>

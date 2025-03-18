@@ -28,7 +28,7 @@ const AppartmentCleaningPage = () => {
                     The objective of cleaning is not just to clean, but to feel cleanness and freshness in your apartment or condo.
                 </p>
                 <p className="text-gray-700 mb-4">
-                    MAID ON CALL apartment/condo cleaning in <a href="ottawa.ca" className="text-blue-400">Ottawa</a> offers you the time you need while our team is taking care of your place, we make sure all the areas are mint clean.
+                    SHR Multiservice apartment/condo cleaning in <a href="ottawa.ca" className="text-blue-400">Ottawa</a> offers you the time you need while our team is taking care of your place, we make sure all the areas are mint clean.
                 </p>
                 <h2 className="text-2xl font-semibold mb-4">Complete checklist of our apartment & condo cleaning service:</h2>
     
