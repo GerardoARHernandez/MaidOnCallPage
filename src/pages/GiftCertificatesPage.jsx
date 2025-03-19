@@ -48,8 +48,8 @@ const GiftCertificatesPage = () => {
                 click here
               </a>{' '}
               or You can contact us by phone at 613-618-0969, by e-mail at{' '}
-              <a href="mailto:info@maidoncall.ca" className="text-blue-600">
-                info@maidoncall.ca
+              <a href="mailto:shrmultiverse@gmail.com" className="text-blue-600">
+              shrmultiverse@gmail.com
               </a>, we will be happy to assist you.
             </p>
           </div>

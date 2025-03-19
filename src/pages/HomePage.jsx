@@ -1,10 +1,10 @@
 
-import ButtonAppoinment from "../components/ButtonAppoinment"
-import HowItWorks from "../components/HomePage/HowItWorks"
-import OurServices from "../components/HomePage/OurServices"
-import Reasons from "../components/HomePage/Reasons"
-import Recent from "../components/HomePage/Recent"
-import Testimonials from "../components/HomePage/Testimonials"
+import ButtonAppoinment from "../components/ButtonAppoinment";
+import HowItWorks from "../components/HomePage/HowItWorks";
+import OurServices from "../components/HomePage/OurServices";
+import Reasons from "../components/HomePage/Reasons";
+import Recent from "../components/HomePage/Recent";
+import Testimonials from "../components/HomePage/Testimonials";
 
 const HomePage = () => {
   return (

@@ -66,7 +66,7 @@ function FAQPage() {
     },
     {
         question: 'How do I book my service?',
-        answer: 'You can contact us by phone at 613-618-0969, by e-mail at info@maidoncall.ca  or book your appointment online, we will happy to assist you.',
+        answer: 'You can contact us by phone at 613-618-0969, by e-mail at shrmultiverse@gmail.com  or book your appointment online, we will happy to assist you.',
     },
   ];
 

@@ -5,6 +5,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { FiPhone } from 'react-icons/fi';
 import { BiAlarm } from 'react-icons/bi';
 import AlertMessage from '../components/AlertMessage';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
   const {
@@ -17,18 +18,37 @@ const ContactPage = () => {
   const [alert, setAlert] = useState({ message: '', type: '' });
 
   const onSubmit = (data) => {
-    console.log(data); // Aquí puedes manejar el envío de los datos (por ejemplo, enviarlos a una API)
-
-    // Simulamos un envío exitoso o un error
-    const isSuccess = true; // Cambia a `false` para simular un error
-    if (isSuccess) {
-      setAlert({ message: 'Form submitted successfully', type: 'success' });
-      reset(); // Limpia el formulario después de un envío exitoso
-    } else {
-      setAlert({ message: 'There was an error sending the form', type: 'error' });
-    }
-
-    // Limpia el mensaje después de 5 segundos
+    // Concatenar todos los datos en un solo mensaje
+    const fullMessage = `
+      Nombre: ${data.firstName} ${data.lastName}
+      Email: ${data.email}
+      Teléfono: ${data.phone}
+      Mensaje: ${data.message}
+    `;
+  
+    const templateParams = {
+      title: "Contacto", // Parámetro predefinido
+      name: data.firstName, // Parámetro predefinido
+      time: new Date().toLocaleTimeString(), // Parámetro predefinido
+      message: fullMessage, // Incluir todos los datos aquí
+      email: data.email, // Parámetro predefinido
+    };
+    
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID, // Service ID
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template ID
+      templateParams, // Datos del formulario
+      import.meta.env.VITE_EMAILJS_USER_ID // User ID
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setAlert({ message: 'Form submitted successfully', type: 'success' });
+        reset();
+      }, (error) => {
+        console.log('FAILED...', error);
+        setAlert({ message: 'There was an error sending the form', type: 'error' });
+      });
+  
     setTimeout(() => {
       setAlert({ message: '', type: '' });
     }, 5000);
@@ -163,7 +183,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <p className="text-gray-600 flex items-center">
                   <TfiEmail size={42} className="mr-2" />
-                  <strong className="text-lg pl-2">booking@maidoncall.ca</strong>
+                  <strong className="text-lg pl-2">shrmultiverse@gmail.com</strong>
                 </p>
                 <p className="text-gray-600 flex items-center mt-2">
                   <FiPhone size={42} className="mr-2" />
