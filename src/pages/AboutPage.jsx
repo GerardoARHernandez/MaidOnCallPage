@@ -140,7 +140,7 @@ const AboutPage = () => {
               cleaning to people who are going through cancer treatment, depression
               problems, and elderly, we need you to help us identifying the one in
               needs, if you know someone who is going through any of these difficult
-              times please send us their information by email at shrmultiverse@gmail.com
+              times please send us their information by email at shrmultiservice@gmail.com
             </p>
           </div>
         </div>

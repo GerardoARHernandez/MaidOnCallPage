@@ -18,8 +18,8 @@ const Privacy = () => {
             <div className="max-w-8xl mx-auto bg-white rounded-lg shadow-xl p-6 text-lg">
                 <p className="py-3">At Website <strong>SHR Multiservice,</strong> one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that are collected and recorded by our website and how we use it.</p>
                 <p className="py-3">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at {''}
-                <a href="mailto:shrmultiverse@gmail.com" className="text-blue-600">
-                shrmultiverse@gmail.com
+                <a href="mailto:shrmultiservice@gmail.com" className="text-blue-600">
+                shrmultiservice@gmail.com
                 </a>.</p>
                 <p className="py-3">This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in SHR Multiservice. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 

@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo y Descripción */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src="/Logo_SHR_Multi.png" // Reemplaza con la ruta de tu logo
+              src="/Logo_SHR_Multi_1.png" // Reemplaza con la ruta de tu logo
               alt="SHR Multiservice Logo"
               className="w-40 mb-4"
             />
@@ -115,7 +115,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <a
-                  href="mailto:shrmultiverse@gmail.com"
+                  href="mailto:shrmultiservice@gmail.com"
                   className="flex items-center text-base text-gray-300 hover:text-blue-400 transition duration-300"
                 >
                   <svg
@@ -132,12 +132,12 @@ const Footer = () => {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  shrmultiverse@gmail.com
+                  shrmultiservice@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/bestcleanerever/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-sm text-gray-300 hover:text-blue-400 transition duration-300"

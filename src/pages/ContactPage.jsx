@@ -183,7 +183,7 @@ const ContactPage = () => {
               <div className="mb-4">
                 <p className="text-gray-600 flex items-center">
                   <TfiEmail size={42} className="mr-2" />
-                  <strong className="text-lg pl-2">shrmultiverse@gmail.com</strong>
+                  <strong className="text-lg pl-2">shrmultiservice@gmail.com</strong>
                 </p>
                 <p className="text-gray-600 flex items-center mt-2">
                   <FiPhone size={42} className="mr-2" />
@@ -210,7 +210,7 @@ const ContactPage = () => {
                 </h2>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.facebook.com/maidoncallhgs/"
+                    href="https://www.facebook.com/bestcleanerever/"
                     className="text-blue-600 hover:text-blue-700"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -218,7 +218,7 @@ const ContactPage = () => {
                     <FaFacebook size={46} />
                   </a>
                   <a
-                    href="https://www.instagram.com/maidoncallghs/"
+                    href="https://www.instagram.com/"
                     className="text-blue-600 hover:text-blue-700"
                     target="_blank"
                     rel="noopener noreferrer"
