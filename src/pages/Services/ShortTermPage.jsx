@@ -1,4 +1,4 @@
-import ButtonAppoinment from '../../components/ButtonAppoinment';
+import ButtonAppoinment from '../../components/Date/ButtonAppoinment';
 
 const ShortTermPage = () => {
     return (

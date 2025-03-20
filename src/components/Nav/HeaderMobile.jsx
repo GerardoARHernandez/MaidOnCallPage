@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ServicesDropdown from "./ServicesDropdown";
-import ButtonAppointment from "../ButtonAppoinment";
+import ButtonAppointment from "../Date/ButtonAppoinment";
 
 const HeaderMobile = ({
   isHomeOpen,

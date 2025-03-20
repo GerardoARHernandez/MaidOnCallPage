@@ -1,5 +1,5 @@
 
-import ButtonAppoinment from "../components/ButtonAppoinment";
+import ButtonAppoinment from "../components/Date/ButtonAppoinment";
 import HowItWorks from "../components/HomePage/HowItWorks";
 import OurServices from "../components/HomePage/OurServices";
 import Reasons from "../components/HomePage/Reasons";
@@ -32,7 +32,7 @@ const HomePage = () => {
       </section>
 
       {/* Contacto Section */}
-    <section id="contacto" className="bg-blue-900 py-6 text-white">
+    <section id="contacto" className="bg-blue-900 py-6 px-4 md:px-0 text-white">
         <div className="container mx-auto w-full">
             <form className="mx-auto w-full "> 
             <div className="flex flex-col md:flex-row md:space-x-2"> 

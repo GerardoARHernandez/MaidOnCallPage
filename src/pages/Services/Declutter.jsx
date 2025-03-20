@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonAppoinment from '../../components/ButtonAppoinment'
+import ButtonAppoinment from '../../components/Date/ButtonAppoinment'
 
 const Declutter = () => {
   return (
