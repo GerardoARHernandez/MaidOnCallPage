@@ -1,24 +1,12 @@
 {
-    "cleanUrls": true,
-    "headers": [
-      {
-        "source": "/assets/(.*).css",
-        "headers": [
-          { "key": "Content-Type", "value": "text/css" }
-        ]
-      },
-      {
-        "source": "/assets/(.*).js",
-        "headers": [
-          { "key": "Content-Type", "value": "application/javascript" }
-        ]
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
