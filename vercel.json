@@ -1,9 +1,8 @@
 {
-    "routes": [
+    "rewrites": [
       {
-        "src": "/assets/(.*)",
-        "headers": { "Content-Type": "text/css" },
-        "dest": "/assets/$1"
+        "source": "/assets/:path*",
+        "destination": "/assets/:path*"
       }
     ]
   }
