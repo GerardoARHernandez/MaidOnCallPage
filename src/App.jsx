@@ -7,7 +7,6 @@ import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import GiftCertificatesPage from "./pages/GiftCertificatesPage";
 import BlogPage from "./pages/BlogPage";
-import ServiceRoutes from "./routes/ServiceRoutes";
 import BlogRoutes from "./routes/BlogRoutes";
 import JoinOurTeam from "./pages/JoinOurTeam";
 import GiftCard from "./pages/GiftCard";

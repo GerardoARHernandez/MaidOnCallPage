@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Reasons from "../components/HomePage/Reasons";
+import ButtonAppointment from "../components/Date/ButtonAppoinment";
 
 const AboutPage = () => {
   // Función para desplazarse a la sección correspondiente
@@ -43,7 +44,7 @@ const AboutPage = () => {
         </section>
 
         <section className="bg-blue-50 py-20">
-          <div className="container mx-auto max-w-lg md:max-w-3xl lg:max-w-6xl text-lg px-10 md:px-0">
+          <div className="container mx-auto max-w-lg md:max-w-3xl lg:max-w-6xl text-lg px-4 lg:px-16 md:px-0">
             <p className="mb-6">
               We are <strong>SHR Multiservice,</strong> a small family business led by an entrepreneur woman, we have a reliable and passionate team committed to offering you the best cleaning service for your home or business.
             </p>
@@ -155,9 +156,7 @@ const AboutPage = () => {
           <p className="text-gray-600 my-8">
             Contact us today and discover why we are the best option.
           </p>
-          <button className="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800">
-            Request a quote
-          </button>
+          <ButtonAppointment />
         </div>
       </section>
     </div>
