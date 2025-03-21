@@ -179,8 +179,7 @@ const Header = () => {
       >
         FAQ
       </Link>
-      <Link
-        to="/join-our-team"
+      <Link to="/join-our-team"
         className="block px-4 py-2 text-gray-700 hover:bg-blue-200"
         onClick={() => {
           closeDropdown();
