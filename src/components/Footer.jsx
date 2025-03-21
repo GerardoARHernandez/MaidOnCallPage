@@ -165,7 +165,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center text-base text-gray-300 hover:text-blue-400 transition duration-300"
                 >
-                  <CiInstagram className='mr-2'/>
+                  <CiInstagram className='mr-2' size={22}/>
                   Follow Us on Instagram
                 </a>
               </li>
