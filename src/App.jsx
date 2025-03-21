@@ -12,6 +12,7 @@ import BlogRoutes from "./routes/BlogRoutes";
 import JoinOurTeam from "./pages/JoinOurTeam";
 import GiftCard from "./pages/GiftCard";
 import Privacy from "./pages/Privacy";
+import ScrollTop from "./components/ScrollTop";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <>
       <Header />
       <div className="font-poppins">
+          <ScrollTop />
           <Routes>
             <Route index element={ <HomePage /> } />
             <Route path="about" element={ <AboutPage /> } />

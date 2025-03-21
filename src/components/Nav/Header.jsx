@@ -179,8 +179,8 @@ const Header = () => {
       >
         FAQ
       </Link>
-      <a
-        href="/join-our-team"
+      <Link
+        to="/join-our-team"
         className="block px-4 py-2 text-gray-700 hover:bg-blue-200"
         onClick={() => {
           closeDropdown();
@@ -189,7 +189,7 @@ const Header = () => {
         onMouseEnter={resetTimer} // Reiniciar el temporizador al pasar el mouse
       >
         Join Our Team
-      </a>
+      </Link>
     </div>
   );
 
