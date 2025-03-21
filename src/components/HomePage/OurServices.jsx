@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const OurServices = () => {
     return (
       <>
@@ -11,7 +13,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: House Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/regular-house-cleaning-ottawa">
+                <Link to="/regular-house-cleaning-ottawa">
                   <img
                     src="/service-1.webp"
                     alt="House Cleaning"
@@ -23,12 +25,12 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">House Cleaning</h3>
                   </div>
-                </a>
+                </Link>
               </div>
   
               {/* Tarjeta de servicio: Office Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/office-cleaning-ottawa" >
+                <Link to="/office-cleaning-ottawa" >
                   <img
                     src="/service-2.webp"
                     alt="Office Cleaning"
@@ -40,12 +42,12 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">Office Cleaning</h3>
                   </div>
-                </a>
+                </Link>
               </div>
   
               {/* Tarjeta de servicio: Condo & Apartment Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/apartment-condo-cleaning-ottawa">
+                <Link to="/apartment-condo-cleaning-ottawa">
                   <img
                     src="/service-3.webp"
                     alt="Condo & Apartment Cleaning"
@@ -57,12 +59,12 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">Condo & Apartment Cleaning</h3>
                   </div>
-                </a>
+                </Link>
               </div>
   
               {/* Tarjeta de servicio: Move-in & Move-out Cleans */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/move-in-cleaning-ottawa">
+                <Link to="/move-in-cleaning-ottawa">
                   <img
                     src="/service-4.webp"
                     alt="Move-in & Move-out Cleans"
@@ -74,12 +76,12 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">Move-in & Move-out Cleans</h3>
                   </div>
-                </a>
+                </Link>
               </div>
   
               {/* Tarjeta de servicio: Post Construction Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="post-construction-cleaning-ottawa" >
+                <Link to="post-construction-cleaning-ottawa" >
                   <img
                     src="/service-5.webp"
                     alt="Post Construction Cleaning"
@@ -91,12 +93,12 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">Post Construction Cleaning</h3>
                   </div>
-                </a>
+                </Link>
               </div>
   
               {/* Tarjeta de servicio: Short-Term & Airbnb Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="/short-term-rental-airbnb-ottawa">
+                <Link to="/short-term-rental-airbnb-ottawa">
                   <img
                     src="/service-6.webp"
                     alt="Short-Term & Airbnb Cleaning"
@@ -108,7 +110,7 @@ const OurServices = () => {
                   <div className="md:hidden p-4 bg-white">
                     <h3 className="text-blue-950 text-xl font-bold">Short-Term & Airbnb Cleaning</h3>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
