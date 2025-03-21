@@ -96,7 +96,7 @@ const OurServices = () => {
   
               {/* Tarjeta de servicio: Short-Term & Airbnb Cleaning */}
               <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                <a href="short-term-rental-airbnb-ottawa">
+                <a href="/short-term-rental-airbnb-ottawa">
                   <img
                     src="/service-6.webp"
                     alt="Short-Term & Airbnb Cleaning"
