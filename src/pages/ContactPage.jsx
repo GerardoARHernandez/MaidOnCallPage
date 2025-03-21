@@ -74,9 +74,9 @@ const ContactPage = () => {
       {/* Sección del formulario de contacto */}
       <div className="min-h-screen bg-blue-50 py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-max mx-auto bg-white rounded-lg shadow-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 p-6">
             {/* Formulario de contacto (3/4 del espacio) */}
-            <div className="lg:col-span-3 p-6 rounded-lg">
+            <div className="lg:col-span-2 p-6 rounded-lg">
               <h2 className="text-2xl font-semibold text-blue-800 mb-6 border-l-4 border-blue-700 pl-4">
                 MESSAGE
               </h2>
