@@ -2,6 +2,9 @@
     "routes": [
       {
         "src": "/assets/(.*)",
+        "headers": {
+          "Content-Type": "text/css"
+        },
         "dest": "/assets/$1"
       },
       {
