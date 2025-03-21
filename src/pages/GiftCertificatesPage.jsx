@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const GiftCertificatesPage = () => {
   return (
@@ -64,8 +65,7 @@ const GiftCertificatesPage = () => {
               />
               {/* Botón con efecto hover y clic */}
               <div className="mt-4 text-center">
-                <a
-                  href="/product/demo"
+                <Link to="/product/demo"
                   rel="noopener noreferrer" // Mejora la seguridad
                   className="block w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all duration-300 group relative overflow-hidden"
                 >
@@ -76,7 +76,7 @@ const GiftCertificatesPage = () => {
                   <span className="absolute inset-0 flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-all duration-300">
                     Select Amount →
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
