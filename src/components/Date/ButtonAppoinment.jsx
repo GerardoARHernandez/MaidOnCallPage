@@ -102,8 +102,15 @@ const ButtonAppointment = () => {
                         className="w-full px-4 py-2 border border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         <option value="">Select a location</option>
-                        <option value="Gatineau">Gatineau</option>
                         <option value="Ottawa">Ottawa</option>
+                        <option value="Gatineau">Gatineau</option>
+                        <option value="Aylmer">Aylmer</option>
+                        <option value="Nepean">Nepean</option>
+                        <option value="Stittsville">Stittsville</option>
+                        <option value="Manotick">Manotick</option>
+                        <option value="Greely">Greely</option>
+                        <option value="Gloucester">Gloucester</option>
+                        <option value="Orléans">Orléans</option>
                         <option value="Other">Other</option>
                       </select>
                       {errors.location && (
