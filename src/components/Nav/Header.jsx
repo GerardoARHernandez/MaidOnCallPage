@@ -199,7 +199,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/">
             <img
-              src="/Logo_SHR_Multi.png" // Ruta de la imagen del logo
+              src="/Lgo_SHR.png" // Ruta de la imagen del logo
               alt="SHR Multiservice Logo"
               className="h-24 w-auto" // Ajusta el tamaño del logo
             />
