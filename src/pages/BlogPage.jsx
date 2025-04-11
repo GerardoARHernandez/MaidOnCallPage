@@ -96,7 +96,7 @@ const BlogPage = () => {
               <p className="text-gray-600 mb-4">
               Have a machine dishwasher it is very helpful, we there is a lot of work left when it comes to having that wash the dishes and it is an important resource to save water.
               </p>
-              <a href="/how-to-wash-the-dishwasher" className="text-blue-600 hover:text-blue-700 font-semibold">
+              <a href="/blog/how-to-wash-the-dishwasher" className="text-blue-600 hover:text-blue-700 font-semibold">
                 Read More →
               </a>
             </div>

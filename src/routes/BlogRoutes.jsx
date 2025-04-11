@@ -10,7 +10,6 @@ import FileDocuments from "../pages/blog/FileDocuments"
 import ChangeSeason from "../pages/blog/ChangeSeason"
 import CleaningHealth from "../pages/blog/CleaningHealth"
 import DifferenceSanitizer from "../pages/blog/DifferenceSanitizer"
-import HealthBenefits from "../pages/blog/HealthBenefits"
 
 
 const BlogRoutes = () => {
@@ -28,7 +27,6 @@ const BlogRoutes = () => {
             <Route path="change-of-season-to-order-the-closet" element={<ChangeSeason/> } />
             <Route path="cleaning-is-health-and-safety-in-your-home" element={<CleaningHealth/> } />
             <Route path="difference-sanitizers-and-disinfectants" element={<DifferenceSanitizer/> } />
-            <Route path="5-health-benefits-of-a-clean-home-that-will-surprise-you" element={<HealthBenefits/> } />
         </Routes>
     
     </>

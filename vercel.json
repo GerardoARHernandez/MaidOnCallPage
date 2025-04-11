@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "src": "/blog(.*)",
+      "dest": "/index.html"
+    },
+    {
       "src": "/assets/(.*)",
       "headers": {
         "Cache-Control": "public, max-age=31536000, immutable",
