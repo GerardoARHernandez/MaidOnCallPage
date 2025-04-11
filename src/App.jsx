@@ -32,6 +32,10 @@ import PreparationForSale from "./pages/Services/PreparationForSale";
 import StagingBasic from "./pages/Services/StagingBasic";
 import SpecialRequests from "./pages/Services/SpecialRequests";
 
+//Blog
+import HealthBenefits from "./pages/blog/HealthBenefits"
+
+
 function App() {
 
   return (
@@ -44,12 +48,14 @@ function App() {
             <Route path="about" element={ <AboutPage /> } />
             <Route path="faq" element={ <FAQPage /> } />
             <Route path="blog" element={ <BlogPage /> } />
-            <Route path="blog/*" element={<BlogRoutes />} /> {/* Aquí se anidan las rutas del blog */}
             <Route path="contact" element={ <ContactPage /> } />
             <Route path="certificates" element={ <GiftCertificatesPage /> } />
             <Route path="product/demo" element={ <GiftCard /> } />
             <Route path="join-our-team" element={ <JoinOurTeam /> } />
             <Route path="privacy" element={ <Privacy /> } />
+
+            <Route path="blog/*" element={<BlogRoutes />} /> {/* Aquí se anidan las rutas del blog */}
+            <Route path="blog/5-health-benefits-of-a-clean-home-that-will-surprise-you" element={<HealthBenefits/> } />
 
             {/* Servicios */}
             <Route path="regular-house-cleaning-ottawa" element={ <HouseCleaningPage /> } />
