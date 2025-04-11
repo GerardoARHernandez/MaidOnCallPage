@@ -55,7 +55,7 @@ function App() {
             <Route path="privacy" element={ <Privacy /> } />
 
             <Route path="blog/*" element={<BlogRoutes />} /> {/* Aquí se anidan las rutas del blog */}
-            <Route path="blog/5-health-benefits-of-a-clean-home-that-will-surprise-you" element={<HealthBenefits/> } />
+            <Route path="5-health-benefits-of-a-clean-home-that-will-surprise-you" element={<HealthBenefits/> } />
 
             {/* Servicios */}
             <Route path="regular-house-cleaning-ottawa" element={ <HouseCleaningPage /> } />
