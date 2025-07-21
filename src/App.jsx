@@ -35,6 +35,12 @@ import MaintenancePage from "./components/MaintenancePage";
 
 function App() {
 
+  const isMaintenance = true; // Cambiar a false para desactivar
+
+  if (isMaintenance) {
+    return <MaintenancePage />;
+  }
+
   return (
     <>
       <Header />

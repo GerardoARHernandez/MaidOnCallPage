@@ -49,7 +49,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/maintenance.html",
+      "dest": "/index.html",
       "headers": {
         "Content-Type": "text/html"
       }
