@@ -31,6 +31,7 @@ import Declutter from "./pages/Services/Declutter";
 import PreparationForSale from "./pages/Services/PreparationForSale";
 import StagingBasic from "./pages/Services/StagingBasic";
 import SpecialRequests from "./pages/Services/SpecialRequests";
+import MaintenancePage from "./components/MaintenancePage";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
       <div className="font-poppins">
           <ScrollTop />
           <Routes>
+            <Route path="/maintenance" element={<MaintenancePage />} />
             <Route index element={ <HomePage /> } />
             <Route path="about" element={ <AboutPage /> } />
             <Route path="faq" element={ <FAQPage /> } />

@@ -46,17 +46,13 @@
         "Content-Type": "image/*"
       },
       "dest": "/$1"
-    },    
-    {
-      "src": "/maintenance.html",
-      "dest": "/maintenance.html",
-      "headers": { "Content-Type": "text/html" }
     },
     {
       "src": "/(.*)",
       "dest": "/maintenance.html",
-      "headers": { "Content-Type": "text/html" }
+      "headers": {
+        "Content-Type": "text/html"
+      }
     }
   ]
-  
 }
